@@ -1,0 +1,12 @@
+<hr/>
+<% for student in @students %>
+<p>Name: <%= student.first_name()%> <%=student.last_name() %></p>
+<p>House: <%= student.house() %> </p>
+<p>Age: <%= student.age() %> </p>
+
+
+<form class="" action="/hogwarts/<%= student.id %>" method="get">
+  <input type="submit" name="" value="View Student">
+</form>
+<hr/>
+<% end %>
